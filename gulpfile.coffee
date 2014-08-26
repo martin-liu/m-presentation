@@ -15,6 +15,9 @@ deps =
 dist =
   cwd: 'dist'
 
+deployOpts =
+  branch: "gh-pages"
+
 gulp.task 'dist', ->
   gulp.src src.cwd
   .pipe gulp.dest dist.cwd
@@ -27,7 +30,7 @@ gulp.task 'dist', ->
 
 gulp.task 'deploy', ['dist'], ->
   gulp.src "./dist/**/*"
-  .pipe deploy()
+  .pipe deploy(deployOpts)
 
 gulp.task 'watch', ->
   gulp.watch src.cwd, [dist]
