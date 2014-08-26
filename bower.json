@@ -1,0 +1,20 @@
+{
+  "name": "m-presentation",
+  "version": "0.0.0",
+  "homepage": "https://github.com/martin-liu/m-presentation",
+  "authors": [
+    "Martin Liu <hflh1989@gmail.com>"
+  ],
+  "description": "Presentations based on impress.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "impress.js": "bartaz/impress.js#~0.5.3"
+  }
+}
